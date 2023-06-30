@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+#formacao{
+    padding: 0;
+}
+   
+
+.header-menu{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    padding: 8px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    height: 60px;
+    background-color: #C4661F;
+}
+
+.header-menu nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lista-menu{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+}
+
+.lista-menu li>a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: inherit;
+}
+
+.principal{
+    height: 100vh;
+    display: flex;
+    background-color: #eeeeee;
+}
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.subcontainer-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.article-lista{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-direction: column;
+   
+}
+
+.subcontainer-projetos{
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column; 
+    padding: 40px;
+}
+
+.segundo-topico{
+    font-size: 36px;
+    color: #783D19;
+}
+
+.lista-projetos{
+    padding: 32px;
+}
+
+.lista-titulo-projeto{
+    color: #5f6f52;;
+    font-size: 23px; 
+}
+
+.lista-link{
+    font-size: 18px;
+    color: #2F80ED;
+}
+
+.lista-texto{
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 25px;
+    color: #828282;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.nome{
+    font-size: 36px;
+    color: #C4661F;
+    font-weight: 700;
+    height: 45px;
+}
+
+.profissao{
+    color: #c5c0c0;
+    height: 60px;
+}
+
+.minibio{
+    font-size: 19px;
+    line-height: 32px;
+    text-align: justify;
+}
+
+.topico-principal{
+    font-size: 36px;
+    color: #783D19;
+}
+
+.lista-item{
+    padding: 32px;
+}
+
+.lista-titulo{
+    color: #B99470;
+    font-size: 23px;
+}
+
+.lista-local{
+    font-size: 18px;
+    color: #2F80ED;
+}
+
+.lista-descricao{
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 25px;
+    color: #828282;
+    font-weight: 300;
+}
+
+.section-titulo-tamanho{
+    font-size: 36px;
+}
+
+#projetos{
+    background-color: #EAEAEA;
+    margin-top: 110px;
+}
+
+.footer{
+    background-color: #C4661F;
+    display: flex;
+    align-items: center;
+    height: 25vh;
+    padding-bottom: 40.25px;
+    padding-top: 40.25px;
+}
+
+.lista-contato{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24.5px;
+}
+
+.links-footer{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 20px;
+}
