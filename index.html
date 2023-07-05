@@ -7,33 +7,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfólio pessoal referente à Priscila Hora">
   <script defer src="https://kit.fontawesome.com/645b4c9ca3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="header-menu">
-    <nav>
-      <ul class="lista-menu">
-        <li> 
-          <a href="#formacao"> Formação  </a> 
-        </li>
-        <li>
-          <a href="#projetos"> Projetos </a>
+    <header class="header-menu">
+      <nav>
+        <ul class="lista-menu">
+
+          <li> 
+            <a href="#inicio"> Início  </a> 
           </li>
-        <li> 
-          <a href="#contatos"> Contatos </a>
-         </li>
-      </ul>
-    </nav>
-  </header>
+
+          <li> 
+            <a href="#formacao"> Formação  </a> 
+          </li>
+          <li>
+            <a href="#projetos"> Projetos </a>
+            </li>
+
+            <li> 
+              <a href="#cursos"> Cursos  </a> 
+            </li>
+
+          <li> 
+            <a href="#contatos"> Contatos </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
   <main>
 
-    <section class="principal">
+    <section class="principal" id="inicio">
       <article class="container subcontainer-principal">
+          <img class="minha-foto" src="priscilahora.jpg" alt="Foto de perfil">
+        </div>
 
-        <div>
-          <img src="img/foto.jfif" alt="Foto de perfil">
+        <div class="contador">
+          <p>Essa página possui</p>
+          <h1 id="count"></h1>
+          <p>visualizações</p>
         </div>
 
         <div>
@@ -43,16 +58,21 @@
 
         <div>
           <p class="minibio">
-            Olá! Meu nome é Priscila e eu sou estudante do Bacharelado em Ciência e Tecnologia pela Universidade Federal do ABC. Atualmente tenho focado meus estudos no aprendizado de Python, pois pretendo seguir carreira em Backend. Mas, além dele, também possuo conhecimento em Git, GitHub, JavaScript, Node.js, HTML e CSS. Após o término do curso interdisplinar na UFABC, irei cursar Ciência da Computação nessa instituição.
+            Oi! Meu nome é Priscila, sou baiana, tenho 18 anos e curso o Bacharelado em Ciência e Tecnologia pela Universidade Federal do ABC. Sempre fui muito curiosa em relação à tecnologia e nos últimos meses tenho buscado me aprimorar nessa área, fazendo com que minha curiosidade se torne algo além da imaginação. Pretendo seguir carreira em Back-end e por esse motivo, a princípio, tenho estudado Python e JavaScript.
           </p>
         </div>
+
+        <button class="btn-like" id="like-project-1">
+          <i class="far fa-heart"></i>
+          <span class="like-count">0</span>
+        </button>
 
       </article>
     </section>
 
     <section id="formacao">
-      <article class="container article-lista">
-        <div>
+         <article class="container article-lista">
+          <div>
           <h3 class="section-titulo-tamanho topico-principal"> Formação Acadêmica </h3>
         </div>
 
@@ -78,9 +98,17 @@
 
         <div class="lista-projetos">
             <ul>
+
+                <li>
+                  <h4 class="lista-titulo-projeto"> Ayrton Senna </h4>
+                  <a class="lista-link" href="https://ayrtonsenna.priscilahora.repl.co" target="_blank"> Legado de Senna </a>
+                  <p class="lista-texto">
+                    Primeiro site criado individualmente por mim e decidi contar um pouco da história de Ayrton Senna. Senna superava limitações técnicas dos carros que dirigia, ganhou 3 campeonatos mundiais sem estar nas condições ideais e, por esses e muitos outros motivos, é considerado o maior piloto de Fórmula 1.
+                  </p> </br>
+                </li>
                 <li> 
                     <h4 class="lista-titulo-projeto"> Dicionário de Mulheres Negras </h4>
-                    <a class="lista-link" href="https://mulheresnegras.priscilahora.repl.co"> Histórias Negras </a>
+                    <a class="lista-link" href="https://mulheresnegras.priscilahora.repl.co" target="_blank"> Histórias Negras </a>
                     <p class="lista-texto">
                         Projeto responsivo desenvolvido durante o curso de Frontend da PrograMaria. Trata-se de um site que lista mulheres que fizeram história no Brasil e no mundo. Cada uma é representada por uma pequena biografia e uma citação pessoal que represente a sua luta.
                     </p> </br>
@@ -88,17 +116,17 @@
 
                 <li>
                     <h4 class="lista-titulo-projeto"> Mulheres da Tecnologia </h4>
-                    <a class="lista-link" href="https://siteada.priscilahora.repl.co"> Site Ada </a>
+                    <a class="lista-link" href="https://siteada.priscilahora.repl.co" target="_blank"> Site Ada </a>
                     <p class="lista-texto">
                         Projeto que apresenta a história de vida das primeiras mulheres na tecnologia. Leva "Ada" em seu nome porquê Ada Lovelace foi a primeira pessoa a desenvolver um algoritmo para ser processado em uma máquina. 
                     </p> </br>
                 </li>
 
                 <li>
-                    <h4 class="lista-titulo-projeto"> Projeto Backend </h4>
-                    <a class="lista-link"href="https://backend-ya7m.onrender.com/mulheres"> Servidor </a>
+                    <h4 class="lista-titulo-projeto"> Calculadora </h4>
+                    <a class="lista-link"href="https://calculadora-priscilahora.netlify.app/" target="_blank"> Calculadora em JavaScript </a>
                     <p class="lista-texto">
-                        Projeto em andamento. Trata-se da criação do meu primeiro servidor, e, seguindo o protótipo da professora Simara Conceição, criaremos um site que listará o nome e história de mulheres atuais da tecnologia. Posteriormente, haverá integração com o Frontend para criar sua interface.
+                      Calculadora desenvolvida durante o curso “minas programam”. Trata-se de uma calculadora das operações básicas ou da média aritmética dos valores inseridos pelo usuário. Durante seu desenvolvimento, conceitos básicos do JavaScript foram revisados.
                     </p>
                 </li>
 
@@ -107,6 +135,51 @@
 
       </article>
     </section>
+
+    <section id="cursos">
+      <article class="container subcontainer-projetos">
+        <div> 
+            <h3 class="section-titulo-tamanho segundo-topico"> Cursos </h3> 
+        </div>
+
+        <div class="lista-projetos">
+            <ul>
+
+                <li>
+                  <h4 class="lista-titulo-projeto"> Lógica de Programação </h4>
+                  <a class="lista-link" href="https://minasprogramam.com/" target="_blank"> Minas Programam </a>
+                  <p class="lista-texto">
+                    O Minas Programam é uma iniciativa que desafia os estereótipos de gênero e de raça que influenciam as relações com as áreas de ciências, tecnologia e computação. Durante o curso, obtive conhecimento em: Metodologias Ágeis, UI e UX, HTML, CSS, Lógica de Programação e JavaScript. O Minas é um ambiente acolhedor que visa a inserção de, principalmente, mulheres negras no mercado da tecnologia.
+                  </p> </br>
+                </li>
+                <li> 
+                    <h4 class="lista-titulo-projeto"> Introdução à Lógica de Programação com Python  </h4>
+                    <a class="lista-link" href="https://lirte.pesquisa.ufabc.edu.br/coletivo_mina/" target="_blank"> Coletivo Mirtha Lina </a>
+                    <p class="lista-texto">
+                        O Coletivo Mina, conjuntamente à UFABC, promove o curso de Introdução à Lógica de Programação com Python, com vagas afirmativas exclusivamente para mulheres. Durante o curso, nós temos acesso a uma ótima base de Python, além de exercícios e apostilas para treino do conteúdo.
+                    </p> </br>
+                </li>
+
+                <li>
+                    <h4 class="lista-titulo-projeto"> Eu Progr{amo}: Front-end #1 e #2 </h4>
+                    <a class="lista-link" href="https://www.programaria.org/" target="_blank"> PrograMaria </a>
+                    <p class="lista-texto">
+                        A PrograMaria contribui para que mais meninas e mulheres sintam-se motivadas e confiantes a explorar os campos da tecnologia, da programação e do empreendedorismo. Durante ambos os cursos, pude ter meus primeiros contatos com HTML e CSS, além de praticar a responsividade.
+                    </p> </br>
+                </li>
+
+            </ul>
+        </div>
+
+      </article>
+    </section>
+
+            </ul>
+        </div>
+
+      </article>
+    </section>
+
   </main>
 
   <footer class="footer" id="contatos">
@@ -115,7 +188,7 @@
 
         <li >
             <i class="fab fa-linkedin"></i>
-            <a class="links-footer" href="https://www.linkedin.com/priscila-pereira-hora" target="_blank"> Priscila Pereira Hora</a>
+            <a class="links-footer" href="https://www.linkedin.com/in/priscila-pereira-hora" target="_blank"> Priscila Pereira Hora</a>
         </li>
 
         <li>
@@ -129,8 +202,13 @@
         </li>
 
       </ul>
+
+      <p class="frase-final"> desenvolvido com carinho por mim ✨ </p>
     </div>
   </footer>
+
+  <script src="script.js"></script>
+
 </body>
 
 </html>
